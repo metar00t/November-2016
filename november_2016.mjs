@@ -10,6 +10,9 @@ const age = prompt("how old are you? ");
 
 function timeToFeelOld(age)
 {
-    var thing = support.giveThing(age);
-    output.output(thing);
+    var result = support.giveThing(age);
+    return result;
 }
+
+var thing = timeToFeelOld(age);
+output.speaker(thing);
